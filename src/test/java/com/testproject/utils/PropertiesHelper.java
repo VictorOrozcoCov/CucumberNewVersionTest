@@ -7,11 +7,11 @@ import java.io.OutputStream;
 import java.util.Map;
 import java.util.Properties;
 
-public class PropertiesCommon {
+public class PropertiesHelper {
 	
 	ApiHelper base;
 	
-	PropertiesCommon(ApiHelper base){
+	PropertiesHelper(ApiHelper base){
 		this.base = base;
 	}
 
