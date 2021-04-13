@@ -1,7 +1,7 @@
 package com.testproject.stepdefinitions;
 
 import com.testproject.utils.ApiHelper;
-import com.testproject.utils.PropertiesCommon;
+import com.testproject.utils.PropertiesHelper;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,7 +17,7 @@ public class GoogleMapsPOST {
 	
 	@Given("I point to {string} service")
 	public void i_point_to_service(String apiName) throws Throwable{
-	    PropertiesCommon.getProperty(apiName);
+	    PropertiesHelper.getProperty(apiName);
 	}
 
 
