@@ -6,6 +6,7 @@ import com.testproject.domain.WeatherApiRequest;
 import com.testproject.enums.ApiPaths;
 import com.testproject.utils.ApiHelper;
 import com.testproject.utils.PropertiesHelper;
+import com.testproject.utils.formaters.ResourceUtils;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -42,7 +43,7 @@ public class WeatherApiGET {
 
 	@Given("I set the information to the resource")
 	public void i_set_the_information_to_the_resource() {
-		base.setResource(ApiPaths.WEATHER_API_GET);
+		base.setResource(ResourceUtils.valuesAsResource(ApiPaths.WEATHER_API_GET, ResourceUtils.weatherApiGetResourceInArray(request)));
 	}
 
 

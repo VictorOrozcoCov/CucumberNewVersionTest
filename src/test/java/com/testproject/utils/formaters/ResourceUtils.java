@@ -6,10 +6,10 @@ import org.json.JSONException;
 
 import com.testproject.domain.WeatherApiRequest;
 
-public class Utils {
+public class ResourceUtils {
 
 	
-	public JSONArray weatherApiGetResourceInArray(WeatherApiRequest request) {
+	public static JSONArray weatherApiGetResourceInArray(WeatherApiRequest request) {
 		JSONArray array = new JSONArray();
 		if(StringUtils.isNotBlank(request.getLat())) {array.put("lat="+request.getLat());}
 		if(StringUtils.isNotBlank(request.getLon())) {array.put("lon="+request.getLon());}
@@ -17,7 +17,7 @@ public class Utils {
 	}
 	
 	
-	public String valuesAsResource(String apiResource, JSONArray params) {
+	public static String valuesAsResource(String apiResource, JSONArray params) {
 		String resource="";
 		if(params.length()>0) {
 			try {
