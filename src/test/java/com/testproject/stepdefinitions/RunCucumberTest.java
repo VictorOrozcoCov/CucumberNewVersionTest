@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 		plugin={"pretty"}
 		,features={"src/test/resources"}
 		,glue={"com.testproject.stepdefinitions"}
-//		,tags={"@test"}
+		//,tags={@test2}
+		//,tags = { "@test2" }
 		,monochrome = false)
 public class RunCucumberTest {
 
